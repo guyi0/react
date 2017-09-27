@@ -1,4 +1,4 @@
-export function callApi(onFinished) {
+export function apiCall(onFinished) {
     console.log("res")
     fetch('https://jsonplaceholder.typicode.com/posts/2')
     .then(function(res) {

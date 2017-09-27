@@ -4,9 +4,7 @@ class Home extends React.Component {
 
     handleChage(e){
 const title = e.target.value
-   this.props.chageTitle(title)
-
-
+   this.props.getuser(title)
 
     }
 
@@ -19,7 +17,7 @@ const title = e.target.value
         return (
 
             <div>
-<input value={this.props.title} type="text" onChange={this.handleChage.bind(this)}/>
+<input  type="text" onChange={this.handleChage.bind(this)}/>
 {this.props.title}
 
             </div>
